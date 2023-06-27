@@ -15,6 +15,7 @@ export class AddCharacterComponent {
     
 
     public character: Character = {
+        id: '',
         name: '',
         power: 0
     };

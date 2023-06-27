@@ -2,7 +2,7 @@
         <ul class="list-group">
             <li *ngFor="
             let character of characterList; 
-            let i = index;
+            
             let isFirst = first;
             let isLast = last;
             let isEven= even;
@@ -15,7 +15,7 @@
             }"
             >
             <div>
-            <span class="text-primary">{{i + 1}}</span>
+            
             
             <span> {{character.name}} - </span>
             
@@ -26,7 +26,7 @@
             <span>Es el ultimo: {{isLast}}</span> -->
             </div>
 
-            <button (click)="onDeleteId(i)" class="btn btn-danger">X</button>
+            <button (click)="onDeleteId(character.id)" class="btn btn-danger">X</button>
         </li>
 
         </ul>
